@@ -73,14 +73,14 @@ import javax.swing.JTextField;
 import javax.swing.JButton;
 
 //username is key password is value for hashtable
-public class LoginChecker extends JFrame implements ActionListener{
+public class Gui extends JFrame implements ActionListener{
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 	static JTextField usertextField;
 	static JTextField passtextField;
-	public LoginChecker() {
+	public Gui() {
 		GridBagLayout gridBagLayout = new GridBagLayout();
 		gridBagLayout.columnWidths = new int[]{0, 0, 0, 0, 0, 0, 0};
 		gridBagLayout.rowHeights = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0};

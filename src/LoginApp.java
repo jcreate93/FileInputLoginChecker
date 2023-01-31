@@ -24,13 +24,13 @@ public class LoginApp {
 				boolean foundUser = false;
 		
 				
-				userInput = LoginChecker.usertextField.getText();
+				userInput = Gui.usertextField.getText();
 				user.setUsername(userInput);
 				user.getUsername();
 				
 				
 				
-				passInput = LoginChecker.passtextField.getText();
+				passInput = Gui.passtextField.getText();
 				pass.setPassword(passInput);  
 				pass.getPassword();				  
 	

@@ -3,7 +3,7 @@
  * @author Julie Chambers
  */
 
-public class Validator extends LoginChecker{   
+public class Validator extends Gui{   
 	
 	private String username;
 	private String password;
