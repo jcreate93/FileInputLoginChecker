@@ -5,7 +5,7 @@ import javax.swing.JFrame;
 public class LoginApp {
 
 	public static void main(String[] args) {
-		//new
+		//newcode
 		JFrame frame = new JFrame();
 		//LoginChecker lc = new LoginChecker();
 	Hashtable<String, String> hashTable = new Hashtable<String, String>();
