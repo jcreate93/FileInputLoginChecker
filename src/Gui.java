@@ -95,23 +95,25 @@ public class Gui extends JFrame implements ActionListener{
 		gbc_lblNewLabel_2.gridy = 1;
 		getContentPane().add(lblNewLabel_2, gbc_lblNewLabel_2);
 		
-		JLabel lblNewLabel = new JLabel("Username: ");
-		GridBagConstraints gbc_lblNewLabel = new GridBagConstraints();
-		gbc_lblNewLabel.anchor = GridBagConstraints.EAST;
-		gbc_lblNewLabel.insets = new Insets(0, 0, 5, 5);
-		gbc_lblNewLabel.gridx = 3;
-		gbc_lblNewLabel.gridy = 3;
-		getContentPane().add(lblNewLabel, gbc_lblNewLabel);
+		guiUser();
 		
-		usertextField = new JTextField();
-		GridBagConstraints gbc_usertextField = new GridBagConstraints();
-		gbc_usertextField.anchor = GridBagConstraints.WEST;
-		gbc_usertextField.insets = new Insets(0, 0, 5, 5);
-		gbc_usertextField.gridx = 4;
-		gbc_usertextField.gridy = 3;
-		getContentPane().add(usertextField, gbc_usertextField);
-		usertextField.setColumns(10);
+		guiPassword();
 		
+		JButton enterButton = new JButton("Enter");
+		GridBagConstraints gbc_enterButton = new GridBagConstraints();
+		gbc_enterButton.insets = new Insets(0, 0, 0, 5);
+		gbc_enterButton.gridx = 4;
+		gbc_enterButton.gridy = 7;
+		getContentPane().add(enterButton, gbc_enterButton);
+		
+		
+		this.setSize(400, 300);
+		setVisible(true);
+		
+			
+	}
+
+	public void guiPassword() {
 		JLabel lblNewLabel_1 = new JLabel("Password: ");
 		GridBagConstraints gbc_lblNewLabel_1 = new GridBagConstraints();
 		gbc_lblNewLabel_1.anchor = GridBagConstraints.EAST;
@@ -128,19 +130,25 @@ public class Gui extends JFrame implements ActionListener{
 		gbc_passtextField.gridy = 5;
 		getContentPane().add(passtextField, gbc_passtextField);
 		passtextField.setColumns(10);
+	}
+
+	public void guiUser() {
+		JLabel lblNewLabel = new JLabel("Username: ");
+		GridBagConstraints gbc_lblNewLabel = new GridBagConstraints();
+		gbc_lblNewLabel.anchor = GridBagConstraints.EAST;
+		gbc_lblNewLabel.insets = new Insets(0, 0, 5, 5);
+		gbc_lblNewLabel.gridx = 3;
+		gbc_lblNewLabel.gridy = 3;
+		getContentPane().add(lblNewLabel, gbc_lblNewLabel);
 		
-		JButton enterButton = new JButton("Enter");
-		GridBagConstraints gbc_enterButton = new GridBagConstraints();
-		gbc_enterButton.insets = new Insets(0, 0, 0, 5);
-		gbc_enterButton.gridx = 4;
-		gbc_enterButton.gridy = 7;
-		getContentPane().add(enterButton, gbc_enterButton);
-		
-		
-		this.setSize(400, 300);
-		setVisible(true);
-		
-			
+		usertextField = new JTextField();
+		GridBagConstraints gbc_usertextField = new GridBagConstraints();
+		gbc_usertextField.anchor = GridBagConstraints.WEST;
+		gbc_usertextField.insets = new Insets(0, 0, 5, 5);
+		gbc_usertextField.gridx = 4;
+		gbc_usertextField.gridy = 3;
+		getContentPane().add(usertextField, gbc_usertextField);
+		usertextField.setColumns(10);
 	}
 
 	@Override
